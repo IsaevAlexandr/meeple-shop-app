@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/meeples",
+      "handler": "meeple.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/meeples/count",
+      "handler": "meeple.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/meeples/:id",
+      "handler": "meeple.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/meeples",
+      "handler": "meeple.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/meeples/:id",
+      "handler": "meeple.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/meeples/:id",
+      "handler": "meeple.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

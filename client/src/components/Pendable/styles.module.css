@@ -1,0 +1,45 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.spinner {
+    position: relative;
+}
+
+.spinner::before {
+    content: '';
+    background-color: darkgray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.spinner::after {
+    content: '';
+    z-index: 1;
+    position: fixed;
+    top: 43%;
+    right: 43%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: green;
+    border-radius: 50%;
+    animation: spinner-spin 1.2s linear infinite;
+}
+
+@keyframes spinner-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

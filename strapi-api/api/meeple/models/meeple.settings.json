@@ -1,0 +1,57 @@
+{
+  "connection": "default",
+  "collectionName": "meeples",
+  "info": {
+    "name": "meeple"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "imageSrc": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "about": {
+      "type": "richtext"
+    },
+    "count": {
+      "type": "integer",
+      "required": false
+    },
+    "price": {
+      "type": "float"
+    },
+    "order": {
+      "type": "integer",
+      "default": 1
+    },
+    "colorType": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "green",
+        "yellow"
+      ]
+    },
+    "thickness": {
+      "type": "float"
+    },
+    "disabled": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

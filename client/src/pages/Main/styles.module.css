@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+}
+
+.nav {
+    width: 25%;
+}
+
+.content {
+    width: 75%;
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    width: calc(100% / 3 - 20px);
+    padding: 10px;
+}
+
+.busket {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
+}

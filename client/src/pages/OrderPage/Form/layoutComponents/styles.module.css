@@ -1,0 +1,10 @@
+.formFow {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.labelContainer,
+.label {
+    width: 100%;
+}

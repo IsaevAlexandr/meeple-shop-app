@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "components_order_detail_order_details",
+  "info": {
+    "name": "OrderDetail",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "count": {
+      "type": "integer",
+      "required": true
+    },
+    "meeple": {
+      "model": "meeple"
+    }
+  }
+}

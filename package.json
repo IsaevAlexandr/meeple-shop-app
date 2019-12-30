@@ -1,0 +1,29 @@
+{
+  "name": "meeple-shop-app",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "start": "cd strapi-api && npm run start",
+    "deps": "npm run deps:client & npm run deps:server",
+    "build": "npm run build:client & npm run build:server",
+    "deps:client": "cd client && npm i",
+    "deps:server": "cd strapi-api && npm i && npm run build",
+    "build:client": "cd client && npm run build && cp -a ./build/. ../strapi-api/public",
+    "build:server": "cd strapi-api && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsaevAlexandr/meeple-shop-app.git"
+  },
+  "keywords": [
+    "react",
+    "mobx",
+    "strapi"
+  ],
+  "author": "IsaevAlexandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IsaevAlexandr/meeple-shop-app/issues"
+  },
+  "homepage": "https://github.com/IsaevAlexandr/meeple-shop-app#readme"
+}
